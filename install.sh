@@ -12,6 +12,9 @@ cp ./zshrc ~/.zshrc 2>&1
 echo "creating customization files: ~/.vimrc.custom, ~/.zshrc.custom, ~/.vimrc.bundles.custom"
 touch ~/.vimrc.custom ~/.zshrc.custom ~/.vimrc.bundles.custom
 
+echo "installing language plugins"
+cp -r ./ftdetect ~/.vim/ftplugin
+
 echo "installing fonts"
 cp ./fonts/* ~/Library/Fonts
 

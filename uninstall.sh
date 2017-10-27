@@ -21,3 +21,10 @@ select yn in "Yes" "No"; do
     No ) exit;;
   esac
 done
+
+echo "remove ftplugins?"
+select yn in "Yes" "No"; do
+  case $yn in
+    Yes ) rm -r ~/.vim/ftplugin
+  esac
+done
